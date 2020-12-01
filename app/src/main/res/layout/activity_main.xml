@@ -16,10 +16,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
+
         <TextView
             android:id="@+id/txtResult"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="117dp"
             android:text="TextView" />
 
         <Button
@@ -51,6 +52,12 @@
             android:layout_width="148dp"
             android:layout_height="86dp"
             android:text="停止识别" />
+
+        <TextView
+            android:id="@+id/txtTodo"
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:text="TextView" />
 
     </LinearLayout>
 

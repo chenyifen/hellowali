@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements EventListener, Vi
     protected Handler handler;
     public static String TAG = "MainActivity";
 
-    protected TextView txtLog, txtResult;
+    protected TextView txtLog, txtResult, txtTodo;
     protected Button btn,stopBtn,startSpeakBtn,startRegBtn,stopRegBtn;
     protected Button[] buttons;
 
@@ -301,6 +301,8 @@ public class MainActivity extends AppCompatActivity implements EventListener, Vi
         stopRegBtn = (Button) findViewById(R.id.stopRegBtn);
         buttons = new Button[] {btn,stopBtn,startSpeakBtn,startRegBtn,stopRegBtn};
         initialButtons();
+        txtTodo =  (TextView) findViewById(R.id.txtTodo);
+        txtTodo.setText("下一版本：\n1.打开后自动等待唤醒，唤醒后开始识别 \n2.识别后从语料库获取回复\n 3.调整界面\n 4.学习内容准备\n 5.保存识别的录音文件 \n6.远程控制回复\n ");
 
     }
     private void startWakeUp() {
