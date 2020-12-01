@@ -18,11 +18,8 @@ public class MyTtsRecogListener extends MessageStatusRecogListener {
 
     @Override
     public void onAsrFinalResult(String[] results, RecogResult recogResult) {
-        String [] strs =  {"你好, hard code"};
-        results = strs;
         super.onAsrFinalResult(results, recogResult);
-        Log.d("here", mySyntherizer.toString());
-        mySyntherizer.speak("我在这儿， 收到");
+        mySyntherizer.speak(results[0]);
 
 
     }

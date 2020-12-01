@@ -23,13 +23,13 @@
             android:text="TextView" />
 
         <Button
-            android:id="@+id/btn"
+            android:id="@+id/wakeUpBtn"
             android:layout_width="148dp"
             android:layout_height="86dp"
             android:text="开始唤醒" />
 
         <Button
-            android:id="@+id/stopBtn"
+            android:id="@+id/stopWakeUpBtn"
             android:layout_width="148dp"
             android:layout_height="86dp"
             android:text="停止唤醒" />
